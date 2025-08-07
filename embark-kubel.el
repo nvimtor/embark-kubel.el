@@ -57,7 +57,7 @@ The target's value is the resource name at the current line."
                (resource-name (tabulated-list-get-id)))
       `(kubel-resource
         ,resource-name
-        ,(line-beginning-position) . ,(line-end-position)))))
+        ,(line-beginning-position) . ,(line-end-position))))
 
 ;; NOTE keymap
 (defvar-keymap embark-kubel-resource-map
