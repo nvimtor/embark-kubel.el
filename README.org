@@ -1,16 +1,15 @@
 #+title: embark-kubel.el
 
-* Description
 An Embark integration for [[https://github.com/abrochard/kubel][kubel.el]]. It provides contextual actions for Kubernetes resources listed in =kubel-mode= buffers.
 
-[[file:docs/example.png][Screenshot]]
+ [[./docs/example.png]]
 
 * Installation
 **  With =straight.el= (example)
 #+BEGIN_SRC emacs-lisp
 (use-package embark-kubel
   :straight (embark-kubel :host github :repo "nvimtor/embark-kubel.el" :files ("embark-kubel.el"))
-  :after (kubel embark)
+  :after (embark kubel)
   :config
   (add-hook 'kubel-mode-hook #'embark-kubel-mode))
 #+END_SRC
