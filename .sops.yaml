@@ -1,0 +1,7 @@
+keys:
+  - &nvimtor 8BCBD88FE4045896ABE812E9F50B59CD34BCDFA3
+creation_rules:
+  - path_regex: .*.yaml
+    key_groups:
+      - pgp:
+          - *nvimtor

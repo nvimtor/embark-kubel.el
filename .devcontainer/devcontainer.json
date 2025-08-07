@@ -1,0 +1,13 @@
+{
+  "name": "nix-devcontainer",
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+
+  "userEnvProbe": "loginShell",
+  "updateRemoteUserUID": false,
+
+  "extensions": [
+    "mkhl.direnv"
+  ]
+}

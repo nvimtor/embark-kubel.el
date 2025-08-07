@@ -1,0 +1,19 @@
+{
+  "name": "devcontainer-codespaces",
+  "dockerFile": "${localWorkspaceFolder}/.devcontainer/Dockerfile",
+  "context": "${localWorkspaceFolder}/.devcontainer",
+
+  "runArgs": [
+    "--security-opt", "label=disable"
+  ],
+
+  "overrideCommand": false,
+  "userEnvProbe": "loginShell",
+  "updateRemoteUserUID": false,
+
+  "extensions": [
+    "mkhl.direnv"
+  ],
+
+  "forwardPorts": []
+}
